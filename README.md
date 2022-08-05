@@ -14,7 +14,7 @@ Saves the given event logs with the given body using PubSub and BigQuery.
 **Endpoint:** `/api/event-logs` \
 **Method:** `POST` \
 **Parameters:** Event logs sent in body in JSON format. \
-**Example Body:** \
+**Example Body:**
 ```JSON
 {
 	"type": "event",
