@@ -13,8 +13,9 @@ Saves the given event logs with the given body using PubSub and BigQuery.
 
 **Endpoint:** `/api/event-logs` \
 **Method:** `POST` \
-**Parameters:** Event logs sent in body in JSON format.
-**Example Body:**
+**Parameters:** Event logs sent in body in JSON format. \
+**Example Body:** \
+```JSON
 {
 	"type": "event",
 	"session_id": "39aff80e-dfe0-4747-87a1-2357cfced4af",
@@ -26,7 +27,7 @@ Saves the given event logs with the given body using PubSub and BigQuery.
 	"city": "İstanbul",
 	"user_id": "1e0e1e04-7d34-41cd-841d-9a6b3fa94528"
 }
-
+```
 
 ### Getting Daily Log Results from BigQuery
 
