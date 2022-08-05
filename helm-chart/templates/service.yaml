@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Values.application.name}}
+  labels:
+    run: {{.Values.application.name}}
+spec:
+  ports:
+  - targetPort: 3070
+    port: 8080
+    nodePort: 31005
+    protocol: TCP
+  selector:
+    app: {{.Values.application.name}}
+  type: LoadBalancer
